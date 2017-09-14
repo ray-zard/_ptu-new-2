@@ -11,11 +11,30 @@ import './lib/foundation-explicit-pieces';
 
 
 $(document).ready(function() {
+
 	$(this).foundation();
+
 	$('#fullpage').fullpage({
 		menu: '#menu',
-		anchors: ['firstPage', 'secondPage', 'lastPage'],
+		anchors: [
+
+			'mainScreen', 
+			'subMainScreen', 
+			'secondPage', 
+			'subSecondPage', 
+			'bookScreen', 
+			'subBookScreen', 
+			'legalScreen', 
+			'subLegalScreen', 
+			'clientsScreen', 
+			'subClientsScreen', 
+			'companyScreen', 
+			'questBlock', 
+			'footer'
+			
+		],
 		navigationPosition: 'top',
 		scrollOverflow: true,
 	});
+
 });

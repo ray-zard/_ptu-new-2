@@ -4,8 +4,8 @@ description: ООО ПромТехУтилизация, утилизация о�
 ---
 <nav id="menu">
 	<ul class="menu align-center">
-		<li data-menuanchor="firstPage" class="active">
-			<a href="#firstPage">Главная</a>
+		<li data-menuanchor="mainScreen" class="active">
+			<a href="#mainScreen">Главная</a>
 		</li>
 		<li data-menuanchor="secondPage" class="duble">
 			<a href="#secondPage">Лицензия</a>
@@ -13,36 +13,75 @@ description: ООО ПромТехУтилизация, утилизация о�
 		<li data-menuanchor="secondPage" class="duble2">
 			<a href="#secondPage">Услуги</a>
 		</li>
-		<li data-menuanchor="lastPage">
-			<a href="#lastPage">Азбука эколога</a>
+		<li data-menuanchor="bookScreen">
+			<a href="#bookScreen">Азбука эколога</a>
 		</li>
-		<li data-menuanchor="#">
-			<a href="#">Юридическое сопровождение</a>
+		<li data-menuanchor="legalScreen">
+			<a href="#legalScreen">Юридическое сопровождение</a>
 		</li>
-		<li data-menuanchor="#">
-			<a href="#">Клиенты</a>
+		<li data-menuanchor="clientsScreen">
+			<a href="#clientsScreen">Клиенты</a>
 		</li>
-		<li data-menuanchor="#">
-			<a href="#">О компании</a>
+		<li data-menuanchor="companyScreen">
+			<a href="#companyScreen">О компании</a>
 		</li>
 	</ul>
 </nav>
 
-<div id="fullpage" class="fullpage-wrapper">
+<main id="fullpage" class="fullpage-wrapper main-content">
 
-	<section class="section" id="section0" data-anchor="firstPage">
-		Шапка
-		<section class="subsection">
-			здесь какой-то текст
-		</section>
+	<section class="section fp-section" id="section0" data-anchor="mainScreen">
+
+		{{> mainScreen}}
+
 	</section>
 
-	<section class="section" id="section1" data-anchor="secondPage">
-		Some section
-	</section>
-
-	<section class="section" id="section3" data-anchor="lastPage">
-		Some section
+	<section class="section fp-auto-height fp-section" id="section1" data-anchor="subMainScreen">
+		Здесь какой-то текст
 	</section>
 	
-</div>
+	<section class="section fp-section" id="section2" data-anchor="secondPage">
+		Лицензия\Услуги
+	</section>
+	
+	<section class="section fp-auto-height fp-section" id="section3" data-anchor="subSecondPage">
+		Здесь какой-то текст
+	</section>
+
+	<section class="section fp-section" id="section4" data-anchor="bookScreen">
+		Азбука эколога
+	</section>
+
+	<section class="section fp-auto-height fp-section" id="section5" data-anchor="subBookScreen">
+		Здесь какой-то текст
+	</section>
+
+	<section class="section fp-section" id="section6" data-anchor="legalScreen">
+		Юр. услуги
+	</section>
+
+	<section class="section fp-auto-height fp-section" id="section7" data-anchor="subLegalScreen">
+		Здесь какой-то текст
+	</section>
+
+	<section class="section fp-section" id="section8" data-anchor="clientsScreen">
+		Клиенты
+	</section>
+
+	<section class="section fp-auto-height fp-section" id="section9" data-anchor="subClientsScreen">
+		Здесь какой-то текст
+	</section>
+
+	<section class="section fp-section" id="section10" data-anchor="companyScreen">
+		О компании
+	</section>
+
+	<section class="section fp-auto-height fp-section" id="section11" data-anchor="questBlock">
+		Задать вопрос
+	</section>
+
+	<section class="section fp-auto-height fp-section" id="section12" data-anchor="footer">
+		Футер
+	</section>
+	
+</main>
