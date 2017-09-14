@@ -5,4 +5,24 @@ $main-gray: #b3b3b3;
 $main-sec-color: #666;
 $main-black: #4d4d4d;
 
+.section {
+	position: relative;
+	overflow: hidden;
+}
 
+.bg-img {
+	position: absolute;
+	height: 110%;
+	min-width: 110%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: -5%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	z-index: -1;
+}
+
+.img-filter {
+	filter: blur(9px);
+}
