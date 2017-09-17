@@ -2,12 +2,83 @@
 
 <div class="main-screen screen-wrapper grid-container fluid">
 
-	<div class="main-screen__top-bar grid-y grid-margin-y">
+	<div class="main-screen__top-bar grid-x">
 		
-		<div class="small-12 cell grid-x">
-			<img src="https://lider-group.pro/assets/img/logo-header.png" alt="" class="main-screen__logo">
+		<div class="main-screen__logo-block small-8 cell grid-y">
+			<img src="assets/img/main-logo.png" alt="" class="main-screen__logo">
 			<span class="main-screen__logo-header cell">Утилизация отходов I-IV классов опасности по РФ</span>
 		</div>
 		
+		<div class="main-screen__contact-block small-4 cell grid-y">
+			<a href="tel:+73412776631" class="main-screen__phone">
+				<i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+				+7 (3412) 77-66-31
+			</a>
+			<a href="mailto:office@lider-group.pro" class="main-screen__email">
+				<i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+				office@lider-group.pro
+			</a>
+
+			<button class="button main-screen__button" data-open="firstQuestModal">Задать вопрос</button>
+
+			<div class="reveal" id="firstQuestModal" data-reveal>
+				<h2>Задать вопрос</h2>
+				<p>Напишите ваш вопрос или кратко опишите ситуацию, в которой нужна наша помощь, и мы связемся с вами в ближайшее время.</p>
+				<form>
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Телефон">
+					<input type="text" placeholder="Email">
+					<textarea placeholder="Сообщение" rows="5"></textarea>
+					<button class="button" type="submit">Отправить вопрос</button>
+				</form>
+				<button class="close-button" data-close aria-label="Close modal" type="button">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+		</div>
+
+		<h1 class="main-screen__header small-12 cell grid-y">
+			Полный комплекс услуг <br><small>по обращению </small>с опасными промышленными отходами
+		</h1>
+
+		<div class="main-screen__icon-block small-4 cell grid-y">
+			<div class="main-screen__icon-head cell grid-x">
+				<img src="assets/img/main-icons-pack.png" alt="" class="main-screen__main-icon cell" style="object-position: -120px 0;">
+				<h2 class="main-screen__main-icon-header">Паспортизация <br>отходов,  <br>Разработка ПНООЛР</h2>
+			</div>
+			<h3 class="main-screen__sub-content cell">Экоаналитическя <br>лаборатория </h3>
+		</div>
+
+		<div class="main-screen__icon-block small-4 cell grid-y">
+			<div class="main-screen__icon-head cell grid-x">
+				<img src="assets/img/main-icons-pack.png" alt="" class="main-screen__main-icon cell" style="object-position: -240px 0;">
+				<h2 class="main-screen__main-icon-header">Транспортировка <br>и сбор</h2>
+			</div>
+			<h3 class="main-screen__sub-content cell">3149 наименований  <br><small>промышленных <br>отходов согласно </small><br>ФККО</h3>
+		</div>
+
+		<div class="main-screen__icon-block small-4 cell grid-y">
+			<div class="main-screen__icon-head cell grid-x">
+				<img src="assets/img/main-icons-pack.png" alt="" class="main-screen__main-icon cell" style="object-position: -360px 0;">
+				<h2 class="main-screen__main-icon-header">Утилизация <br>и обезвреживание</h2>
+			</div>
+			<h3 class="main-screen__sub-content cell">Более 30 объектов <br><small>размещения отходов <br></small>по россии</h3>
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="main-screen__quest-phone grid-container fluid">
+	<div class="main-screen__wrapper grid-container">
+		<h4 class="main-screen__quest-header">Оставьте заявку на бесплатную консультацию отдела распределения промышленных отходв.</h4>
+		<ul>
+			<li>Профессиональная консультация по повросам обращения с отходами производства</li>
+			<li>Определение потребностей для дальнейшего формирования коммерсеского предложения по утилизации отходов вашего предприятия</li>
+		</ul>
+		<form class="main-screen__qp-form grid-x">
+			<input type="text" name="phone" class="main-screen__input-phone large-auto" placeholder="+7 (___) ___-__-__">
+			<button class="main-screen__button-phone button">Консультация отдела рвспределения промышленных отходов</button>
+		</form>
 	</div>
 </div>
