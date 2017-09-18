@@ -1,7 +1,12 @@
 .main-screen {
-
+	margin-top: 1.6rem;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;	
+	
 	&__top-bar {
-		margin-top: 1rem;
+		justify-content: space-between;	
 	}
 
 	&__logo-header {
@@ -103,10 +108,39 @@
 
 	&__quest-phone {
 		background-color: $white;
-		
+
+		& li {
+			font-size: 16px;
+			text-transform: uppercase;		
+		}
+	}
+
+	&__input-phone {
+		font-size: 1.55rem;
+		padding: 1rem;
+		height: auto;
+		margin: 0;
+		&:placeholder {
+			
+		}
+	}
+
+	&__button-phone {
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 1rem;
+		background-color: $main-color;
+		margin: 0;
 	}
 
 	&__wrapper {
 		padding: 3rem 0;
+	}
+
+	&__quest-header {
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
 	}
 }

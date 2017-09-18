@@ -1,0 +1,12 @@
+.sub-section {
+	background-color: $main-color;
+	
+	&.gray {
+		background-color: $main-sec-color;
+	}
+	&__text {
+		color: $white;
+		padding: 4rem;
+		margin: 0;
+	}
+}

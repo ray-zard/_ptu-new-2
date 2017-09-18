@@ -1,0 +1,35 @@
+.services {
+	height: 100%;
+	padding-top: calc(60px + 2rem);
+	overflow: hidden;
+
+	&__licensiya {
+		justify-content: space-between;
+		padding: 1rem;
+	}
+
+	&__header {
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		color: $main-gray;
+	}
+
+	&__img-lic {
+		max-height: 400px;
+		align-self: center;
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+	&__button {
+		font-size: 24px;
+		text-transform: uppercase;
+		padding: 1rem;
+		background-color: $main-color;
+		align-self: center;
+		border-radius: 12px;
+	}
+}
